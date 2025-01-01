@@ -7,7 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0]
+
 ### Added
 
 - Added `Enum.repeat/2`.
 - Added `Date.today!/2`.
+
+[Unreleased]: https://github.com/yihangho/elixir_ext/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/yihangho/elixir_ext/releases/tag/v1.0.0
