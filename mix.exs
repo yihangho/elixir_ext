@@ -4,7 +4,7 @@ defmodule Ext.MixProject do
   def project do
     [
       app: :ext,
-      version: "1.0.0",
+      version: "1.1.0",
       elixir: "~> 1.16",
       deps: deps(),
       description: description(),
