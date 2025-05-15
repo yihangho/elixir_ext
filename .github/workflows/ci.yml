@@ -17,7 +17,10 @@ jobs:
             otp: 26.2
 
           - elixir: 1.17.3
-            otp: 27.2
+            otp: 27.3
+
+          - elixir: 1.18.3
+            otp: 27.3
             lint: true
 
     runs-on: ubuntu-24.04
