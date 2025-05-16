@@ -7,11 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Added `LenientMap.get/3`
+
 ## 1.1.0
 
 ### Added
 
-- Added `LenientMap.get_and_delete/2`.
+- Added `LenientMap.get_and_delete/3`.
 
 ## [1.0.0]
 
