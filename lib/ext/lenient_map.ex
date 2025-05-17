@@ -39,6 +39,31 @@ defmodule Ext.LenientMap do
   end
 
   @doc """
+  Delete a specific key from the `map`.
+
+  If the `map` has both the atom and string keys, both of them will be deleted.
+
+  ## Examples
+
+      iex> Ext.LenientMap.delete(%{a: 1, b: 2}, :a)
+      %{b: 2}
+
+      iex> Ext.LenientMap.delete(%{"a" => 1, "b" => 2}, :a)
+      %{"b" => 2}
+
+      iex> Ext.LenientMap.delete(%{"a" => 1, :a => 2, "b" => 3}, :a)
+      %{"b" => 3}
+
+      iex> Ext.LenientMap.delete(%{a: 1, b: 2}, :c)
+      %{a: 1, b: 2}
+  """
+  @spec delete(map(), atom()) :: map()
+  def delete(map, atom_key) when is_map(map) and is_atom(atom_key) do
+    str_key = Atom.to_string(atom_key)
+    Map.drop(map, [atom_key, str_key])
+  end
+
+  @doc """
   Returns the value for a specific key and delete it from the `map`.
 
   If a value can be found using both the atom and string keys, the value given
@@ -64,10 +89,7 @@ defmodule Ext.LenientMap do
   @spec get_and_delete(map(), atom(), Map.value()) :: {Map.value(), map()}
   def get_and_delete(map, atom_key, default \\ nil) when is_map(map) and is_atom(atom_key) do
     value = get(map, atom_key, default)
-
-    str_key = Atom.to_string(atom_key)
-    dropped_map = Map.drop(map, [atom_key, str_key])
-
+    dropped_map = delete(map, atom_key)
     {value, dropped_map}
   end
 end
