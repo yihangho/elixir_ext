@@ -15,6 +15,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added `String.is_not_empty?/1`.
 - Added `Random.alphanumeric/1`.
 - Added `Random.sample/1`.
+- Added `LenientMap.has_key?/2`.
+- Added `LenientMap.update!/3`.
+- Added `LenientMap.put/3`.
 
 ## 1.3.0
 
