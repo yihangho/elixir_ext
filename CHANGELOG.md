@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added `Nil.map/2`.
 - Added `String.is_empty?/1`.
 - Added `String.is_not_empty?/1`.
+- Added `Random.alphanumeric/1`.
+- Added `Random.sample/1`.
 
 ## 1.3.0
 
