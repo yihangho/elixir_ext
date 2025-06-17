@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## 1.4.0
+
 ### Added
 
 - Added `Functor.map/2`.
@@ -44,7 +46,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added `Enum.repeat/2`.
 - Added `Date.today!/2`.
 
-[Unreleased]: https://github.com/yihangho/elixir_ext/compare/v1.3.0...HEAD
+[Unreleased]: https://github.com/yihangho/elixir_ext/compare/v1.4.0...HEAD
+[1.4.0]: https://github.com/yihangho/elixir_ext/releases/tag/v1.4.0
 [1.3.0]: https://github.com/yihangho/elixir_ext/releases/tag/v1.3.0
 [1.2.0]: https://github.com/yihangho/elixir_ext/releases/tag/v1.2.0
 [1.1.0]: https://github.com/yihangho/elixir_ext/releases/tag/v1.1.0
